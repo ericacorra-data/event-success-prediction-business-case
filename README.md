@@ -156,6 +156,27 @@ plt.tight_layout()
 plt.show()
 ```
 ![Top 10 Cities](event_files/Top_10_cities.png)
+>  ***Business Insight:**
+>Historical performance varies considerably across cities. Some locations consistently achieve higher success rates, suggesting that geographical context plays a significant role in event performance.
+### Event Categories
+```python
+#  Best performing events
+categoria_analysis = df_t0.groupby('CATEGORIA')['STATO'].agg(['count', 'sum'])
+
+categoria_analysis['success_rate'] = categoria_analysis['sum'] / categoria_analysis['count']
+categoria_analysis = categoria_analysis[categoria_analysis['count'] >= 10]
+categoria_analysis.sort_values(by='success_rate', ascending=False)
+```
+| Event Category | Events | Successful Events | Success Rate |
+|:---------------|-------:|------------------:|-------------:|
+| 🥇 Category_4 | 353 | 61 | **17.28%** |
+| 🥈 Category_3 | 152 | 20 | **13.16%** |
+| 🥉 Category_9 | 77 | 8 | **10.39%** |
+| Category_8 | 74 | 7 | **9.46%** |
+| Category_11 | 135 | 7 | **5.19%** |
+| Category_1 | 10 | 0 | **0.00%** |
+>  **Business Insight:**
+> Event performance varies considerably across categories. **Category_4** achieved the highest historical success rate (17.28%) while also representing the largest share of events, suggesting it offers the greatest marketing potential. Conversely, **Category_1** recorded no successful events during the observed period, indicating a low-priority category for future marketing investments.
 ```python
 
 ```
