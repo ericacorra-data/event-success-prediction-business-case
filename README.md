@@ -42,8 +42,8 @@ Update the prediction after one week using user engagement metrics
 |                   | T0             | T+1              |
 | ----------------- | -------------- | ---------------- |
 | Information       | Static         | Behaviour        |
-| Accuracy          | 68.5%          | ...              |
-| ROC-AUC           | 0.70           | ...              |
+| Accuracy          | 70.9%          | ...              |
+| ROC-AUC           | 0.73           | ...              |
 | Business Decision | Publish?       | Increase Budget? |
 | Main Value        | Prioritization | Optimization     |
 
