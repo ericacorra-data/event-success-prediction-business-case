@@ -21,8 +21,8 @@ This analysis aims to answer the following business questions:
 ## Stage 1 — Pre-Publication Prediction (T0)
 Objective
 Predict event success before publication using only static event information.
-> ✔ Accuracy: 68.5%
-> ✔ ROC-AUC: 0.70
+> ✔ Accuracy: 70.9%
+> ✔ ROC-AUC: 0.73
 > ✔ Decision: Should this event be promoted?
 
 📓 Notebook:
