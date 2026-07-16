@@ -31,8 +31,8 @@ Predict event success before publication using only static event information.
 ## Stage 2 — Post-Publication Optimization (T+1)
 Objective
 Update the prediction after one week using user engagement metrics
-> ✔ Accuracy: ...
-> ✔ ROC-AUC: ...
+> ✔ Accuracy: 84.2%
+> ✔ ROC-AUC: 0.92
 > ✔ Decision: Should marketing investment increase or be focused only on defined events?
 
 📓 Notebook:
