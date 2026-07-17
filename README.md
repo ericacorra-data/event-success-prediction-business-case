@@ -179,6 +179,16 @@ These examples demonstrate how the T+1 model transforms behavioural data into **
 
 ![Prediction_budget](images/Ads_Budget.png)
 
+## Business Conclusions
+
+| Business Question | Conclusion |
+|-------------------|------------|
+| Can event success be predicted before publication? | ✅ Yes, using static event characteristics. |
+| Does behavioural data improve prediction quality? | ✅ Yes, predictive performance increases substantially after one week. |
+| Can marketing actions be automated? | ✅ Yes, through the Decision Support System. |
+| When should advertising budgets be adjusted? | ✅ After behavioural signals become available. |
+| What is the overall contribution? | ✅ A practical two-stage decision-support framework for marketing optimization. |
+
 ## Final Takeaway
 Rather than developing a single prediction model, this project demonstrates how machine learning can support marketing decisions throughout the lifecycle of an event.
 The proposed two-stage framework combines pre-publication forecasting with post-publication optimization, illustrating how predictive analytics can evolve from a simple classification model into a practical business decision-support system.
