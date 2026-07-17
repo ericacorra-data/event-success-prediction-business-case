@@ -92,8 +92,7 @@ The project is built around a **two-stage decision-support framework**, where ea
 
 ## Key Insight
 The T0 model provides an initial prediction before publication, supporting campaign planning and early budget allocation.
-After one week, the T+1 model incorporates behavioural signals such as visitor growth, reading time, conversion rate and early bookings, substantially improving predictive performance and enabling dynamic marketing >decisions.
-Rather than replacing the first model, the T+1 model **extends** it, creating a practical two-stage decision-support framework that continuously updates recommendations as new information becomes available.
+After one week, the T+1 model incorporates behavioural signals such as visitor growth, reading time, conversion rate and early bookings, substantially improving predictive performance and enabling dynamic marketing decisions. Rather than replacing the first model, the T+1 model extends it, creating a practical two-stage decision-support framework that continuously updates recommendations as new information becomes available.
 
 ```mermaid
 flowchart LR
@@ -151,8 +150,8 @@ D
 ## Example Predictions 
 ## (T0)
 
-The T0 model estimates the probability of success **before an event is published**, using only static event information.
-These examples illustrate how the T0 model assigns a **success score** and a corresponding **marketing priority** before publication. This early assessment enables marketing teams to prioritize campaigns and allocate advertising resources before behavioural data become available.
+The T0 model estimates the probability of success before an event is published, using only static event information.
+These examples illustrate how the T0 model assigns a success score and a corresponding marketing priority before publication. This early assessment enables marketing teams to prioritize campaigns and allocate advertising resources before behavioural data become available.
 
 | City | Event Category | Day | Month | Age Group | Success Score | Priority |
 |:----|:---------------|:---:|:-----:|:---------:|--------------:|:---------|
