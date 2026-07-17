@@ -187,6 +187,7 @@ The T+1 model updates event predictions one week after publication by incorporat
 | Can marketing actions be automated? | ✅ Yes, through the Decision Support System. |
 | When should advertising budgets be adjusted? | ✅ After behavioural signals become available. |
 | What is the overall contribution? | ✅ A practical two-stage decision-support framework for marketing optimization. |
+
 Overall, the proposed framework demonstrates that combining machine learning with behavioural analytics enables more effective marketing decisions than relying on static predictions alone.
 By integrating prediction models with a decision-support engine, the framework transforms analytical outputs into actionable business recommendations.
 
