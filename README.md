@@ -1,5 +1,9 @@
 # Two-Stage Marketing Decision Support System
-
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
+![Machine Learning](https://img.shields.io/badge/Machine-Learning-success)
+![Logistic Regression](https://img.shields.io/badge/Model-Logistic%20Regression-red)
+![Business Analytics](https://img.shields.io/badge/Business-Decision%20Support-purple)
 ###  Predicting Event Success Before Publication and Optimizing Marketing Investments with Machine Learning
 
 **Author:** Erica Corradini
@@ -15,9 +19,8 @@ Together, the two models demonstrate how predictive analytics can support strate
 ## Why This Project?
 Most machine learning projects stop at predicting an outcome. In practice, however, business decisions are continuous: marketing strategies evolve as new information becomes available.
 This project goes beyond prediction by developing a two-stage marketing decision-support system. It combines pre-publication forecasting with post-publication behavioural analysis to help marketing teams prioritize events, optimize advertising investments and make data-driven decisions throughout the early lifecycle of an event.
-> **Used Tools**
->
-> Python • Pandas • NumPy • SciPy • Scikit-learn • Matplotlib • Seaborn
+### Tools & Libraries
+Python • Pandas • NumPy • SciPy • Scikit-learn • Matplotlib • Seaborn
 > ## Key Results
 >| Metric | T0 | T+1 |
 >|:-------|:--:|:--:|
@@ -29,10 +32,7 @@ This project goes beyond prediction by developing a two-stage marketing decision
 >| **Success Recall** | **68%** | **82%** |
 >| **Business Output** | Event Success Score | Marketing Recommendation |
 >| **Decision Support** | Prioritize events before launch | INVEST · MONITOR · OPTIMIZE · STOP |
->| Stage | Objective | Accuracy | ROC-AUC |
->|-------|-----------|---------:|--------:|
->| **T0** | Predict event success before publication | **70.9%** | **0.73** |
->| **T+1** | Update predictions using behavioural data | **84.2%** | **0.92** |
+
 
 ## Table of Contents
 1. [Business Problem](#business-problem)
@@ -152,6 +152,7 @@ D
 ## (T0)
 
 The T0 model estimates the probability of success **before an event is published**, using only static event information.
+These examples illustrate how the T0 model assigns a **success score** and a corresponding **marketing priority** before publication. This early assessment enables marketing teams to prioritize campaigns and allocate advertising resources before behavioural data become available.
 
 | City | Event Category | Day | Month | Age Group | Success Score | Priority |
 |:----|:---------------|:---:|:-----:|:---------:|--------------:|:---------|
@@ -160,12 +161,11 @@ The T0 model estimates the probability of success **before an event is published
 | City_4 | Category_1 | Day_3 | Month_5 | Age Group 2 | **0.428** | 🟡 MEDIUM POTENTIAL |
 | City_60 | Category_5 | Day_5 | Month_8 | Age Group 1 | **0.498** | 🟡 MEDIUM POTENTIAL |
 
-These examples illustrate how the T0 model assigns a **success score** and a corresponding **marketing priority** before publication. This early assessment enables marketing teams to prioritize campaigns and allocate advertising resources before behavioural data become available.
 
 ![Prediction_model](images/Predicted_succes_T0.png)
 
 ## (T+1)
-The T+1 model updates event predictions **one week after publication** by incorporating early behavioural metrics such as bookings and conversion rates. Based on these signals, the Decision Support System generates actionable marketing recommendations.
+The T+1 model updates event predictions one week after publication by incorporating early behavioural metrics such as bookings and conversion rates. Based on these signals, the Decision Support System generates actionable marketing recommendations. These examples demonstrate how the T+1 model transforms behavioural data into actionable marketing decisions. Instead of providing only a probability of success, the Decision Support System recommends whether to **INVEST**, **OPTIMIZE**, or **STOP** each campaign, enabling marketing teams to dynamically adjust advertising strategies as new engagement data become available.
 
 | City | Event Category | Success Probability | Booked | Conversion | Signal | Recommendation | Marketing Action |
 |:----|:---------------|--------------------:|-------:|-----------:|:------:|:--------------|:-----------------|
@@ -175,7 +175,6 @@ The T+1 model updates event predictions **one week after publication** by incorp
 | City_31 | Category_1 | **2.6%** | 4 | 25.0% | 🟠 | **OPTIMIZE** | Improve campaign |
 | City_42 | Category_7 | **4.4%** | 0 | 0.0% | 🔴 | **STOP** | Reduce advertising spend |
 
-These examples demonstrate how the T+1 model transforms behavioural data into **actionable marketing decisions**. Instead of providing only a probability of success, the Decision Support System recommends whether to **INVEST**, **OPTIMIZE**, or **STOP** each campaign, enabling marketing teams to dynamically adjust advertising strategies as new engagement data become available.
 
 ![Prediction_budget](images/Ads_Budget.png)
 
@@ -188,6 +187,8 @@ These examples demonstrate how the T+1 model transforms behavioural data into **
 | Can marketing actions be automated? | ✅ Yes, through the Decision Support System. |
 | When should advertising budgets be adjusted? | ✅ After behavioural signals become available. |
 | What is the overall contribution? | ✅ A practical two-stage decision-support framework for marketing optimization. |
+Overall, the proposed framework demonstrates that combining machine learning with behavioural analytics enables more effective marketing decisions than relying on static predictions alone.
+By integrating prediction models with a decision-support engine, the framework transforms analytical outputs into actionable business recommendations.
 
 ## Final Takeaway
 Rather than developing a single prediction model, this project demonstrates how machine learning can support marketing decisions throughout the lifecycle of an event.
