@@ -36,22 +36,15 @@ This project goes beyond prediction by developing a two-stage marketing decision
 
 ## Table of Contents
 1. [Business Problem](#business-problem)
-
 2. [Dataset Overview](#dataset-overview)
-
 3. [Data Pivacy](#data-privacy)
-
 4. [Model Comparison](#model-comparison)
-
-7. [Forecasting Models](#forecasting-models)
-
-8. [Model Evaluation](#model-evaluation)
-
-9. [Monte Carlo Simulation](#monte-carlo-simulation)
-
-10. [Business Conclusions](#business-conclusions)
-
-11. [Final takeaway](#final-takeaway)
+5. [Key Insight](#key-insight)
+6. [Decision Support Framework](#decision-support-framework)
+9. [Business Impact](#business-impact)
+9. [Example Predictions](#example-predictions)
+11. [Business Conclusions](#business-conclusions)
+12. [Final Takeaway](#final-takeaway)
 
 
 ## Business Problem
@@ -97,7 +90,7 @@ The project is built around a **two-stage decision-support framework**, where ea
 | **Business Decision** | Should this event be promoted? | Should the marketing strategy change? |
 | **Output** | Event Success Score | Marketing Recommendation |
 
-### Key Insight
+## Key Insight
 The T0 model provides an initial prediction before publication, supporting campaign planning and early budget allocation.
 After one week, the T+1 model incorporates behavioural signals such as visitor growth, reading time, conversion rate and early bookings, substantially improving predictive performance and enabling dynamic marketing >decisions.
 Rather than replacing the first model, the T+1 model **extends** it, creating a practical two-stage decision-support framework that continuously updates recommendations as new information becomes available.
@@ -155,7 +148,8 @@ D
 | **Overall framework** | Support dynamic, data-driven marketing decision-making throughout the event lifecycle |
 
 
-## Example Predictions (T0)
+## Example Predictions 
+## (T0)
 
 The T0 model estimates the probability of success **before an event is published**, using only static event information.
 
@@ -170,8 +164,7 @@ These examples illustrate how the T0 model assigns a **success score** and a cor
 
 ![Prediction_model](images/Predicted_succes_T0.png)
 
-## Example Predictions (T+1)
-
+## (T+1)
 The T+1 model updates event predictions **one week after publication** by incorporating early behavioural metrics such as bookings and conversion rates. Based on these signals, the Decision Support System generates actionable marketing recommendations.
 
 | City | Event Category | Success Probability | Booked | Conversion | Signal | Recommendation | Marketing Action |
@@ -186,7 +179,7 @@ These examples demonstrate how the T+1 model transforms behavioural data into **
 
 ![Prediction_budget](images/Ads_Budget.png)
 
-## Key Takeaway
+## Final Takeaway
 Rather than developing a single prediction model, this project demonstrates how machine learning can support marketing decisions throughout the lifecycle of an event.
 The proposed two-stage framework combines pre-publication forecasting with post-publication optimization, illustrating how predictive analytics can evolve from a simple classification model into a practical business decision-support system.
 
