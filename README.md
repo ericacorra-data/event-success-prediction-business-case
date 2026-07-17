@@ -184,6 +184,7 @@ The T+1 model updates event predictions **one week after publication** by incorp
 
 These examples demonstrate how the T+1 model transforms behavioural data into **actionable marketing decisions**. Instead of providing only a probability of success, the Decision Support System recommends whether to **INVEST**, **OPTIMIZE**, or **STOP** each campaign, enabling marketing teams to dynamically adjust advertising strategies as new engagement data become available.
 
+![Prediction_budget](images/Ads_Budget.png)
 
 ## Key Takeaway
 Rather than developing a single prediction model, this project demonstrates how machine learning can support marketing decisions throughout the lifecycle of an event.
