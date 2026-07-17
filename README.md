@@ -168,7 +168,7 @@ The T0 model estimates the probability of success **before an event is published
 
 These examples illustrate how the T0 model assigns a **success score** and a corresponding **marketing priority** before publication. This early assessment enables marketing teams to prioritize campaigns and allocate advertising resources before behavioural data become available.
 
-![Prediction_model](images/predicted_succes_T0.png)
+![Prediction_model](images/Predicted_succes_T0.png)
 
 ## Example Predictions (T+1)
 
