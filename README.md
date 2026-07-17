@@ -66,6 +66,31 @@ Rather than developing a single prediction model, this project demonstrates how 
 The proposed two-stage framework combines pre-publication forecasting with post-publication optimization, illustrating how predictive analytics can evolve from a simple classification model into a practical business decision-support system.
 
 
+## Decision Support Framework
 
+```mermaid
+flowchart TD
+
+A[Behavioural Data]
+-->B[Logistic Regression Model]
+
+B
+-->C[Predicted Success Probability]
+
+C
+-->D{Decision Engine}
+
+D
+-->E["🟢 INVEST<br/>Increase advertising budget"]
+
+D
+-->F["🟡 MONITOR<br/>Continue campaign<br/>Collect more data"]
+
+D
+-->G["🟠 OPTIMIZE<br/>Improve page content<br/>Retarget audience<br/>Reassess"]
+
+D
+-->H["🔴 STOP<br/>Do not invest further"]
+```
 
 
