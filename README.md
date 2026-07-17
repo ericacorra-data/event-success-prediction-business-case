@@ -168,6 +168,8 @@ The T0 model estimates the probability of success **before an event is published
 
 These examples illustrate how the T0 model assigns a **success score** and a corresponding **marketing priority** before publication. This early assessment enables marketing teams to prioritize campaigns and allocate advertising resources before behavioural data become available.
 
+![Prediction_model](images/predicted_succes_T0.png)
+
 ## Example Predictions (T+1)
 
 The T+1 model updates event predictions **one week after publication** by incorporating early behavioural metrics such as bookings and conversion rates. Based on these signals, the Decision Support System generates actionable marketing recommendations.
